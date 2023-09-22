@@ -1,4 +1,5 @@
-  int startX = (int)(Math.random()*260);
+import Pfp (2).png;
+int startX = (int)(Math.random()*260);
   int startY = 0;
   int endX = (int)(Math.random()*260);
   int endY = 370;
