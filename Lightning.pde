@@ -1,4 +1,3 @@
-import Pfp (2).png;
 int startX = (int)(Math.random()*260);
   int startY = 0;
   int endX = (int)(Math.random()*260);
@@ -6,7 +5,7 @@ int startX = (int)(Math.random()*260);
 
 void setup() {
   size(260,370);
-  background("Pfp (2).png");
+  background();
   strokeWeight((int)(Math.random()*10));
 }
 
