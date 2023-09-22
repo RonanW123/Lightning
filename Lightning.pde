@@ -5,7 +5,7 @@
 
 void setup() {
   size(260,370);
-  background(Pfp (2).png);
+  background("Pfp (2).png");
   strokeWeight((int)(Math.random()*10));
 }
 
