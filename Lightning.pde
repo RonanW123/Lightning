@@ -5,9 +5,6 @@
 
 void setup() {
   size(260,370);
-  PImage img;
-  img = loadImage("https://www.esbnyc.com/sites/default/files/styles/260x370/public/2020-01/thumbnail5M2VW4ZF.jpg?itok=3kRhMPZA");
-  background(img);
   strokeWeight((int)(Math.random()*10));
 }
 
@@ -24,9 +21,6 @@ void draw() {
 }
 
 void mousePressed() {
-  PImage img;
-  img = loadImage("https://www.esbnyc.com/sites/default/files/styles/260x370/public/2020-01/thumbnail5M2VW4ZF.jpg?itok=3kRhMPZA");
-  background(img);
   startX = (int)(Math.random()*260);
   startY = 0;
   endX = (int)(Math.random()*260);
