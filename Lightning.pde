@@ -1,111 +1,82 @@
-int startX = 175;
-int startY = 175;
-int endX = 350;
+int startX = 500;
+int startY = 350;
+int endX = 0;
 int endY = 0;
 
-int startX2 = 175;
-int startY2 = 175;
+int startX2 = 500;
+int startY2 = 350;
 int endX2 = 0;
-int endY2 = 350;
+int endY2 = 0;
 
 void setup(){
-  size(1850,1000);
-  strokeWeight(15);
+  size(1000, 750);
+  strokeWeight(10);
   background(0);
 }
 
 void draw(){
-  rect(975, 475, 175, 175);
-  beginShape();
-  vertex(940, 570);
-  vertex(970, 620);
-  vertex(970, 570);
-  endShape(CLOSE);
-  beginShape();
-  vertex(1150, 450);
-  vertex(1175, 475);
-  vertex(1150, 475);
-  endShape(CLOSE);
-  beginShape();
-  vertex(1180, 480);
-  vertex(1205, 520);
-  vertex(1150, 520);
-  vertex(1150, 480);
-  endShape(CLOSE);
-  beginShape();
-  vertex(1150, 650);
-  beginShape();
-  curveVertex(1290, 600);
-  curveVertex(1290, 600);
-  curveVertex(1240, 570);
-  curveVertex(1175, 480);
-  curveVertex(1110, 600);
-  curveVertex(1060, 750);
-  curveVertex(1040, 880);
-  curveVertex(1040, 880);
-  endShape();
-  beginShape();
-  curveVertex(1158, 904);
-  curveVertex(1108, 886);
-  curveVertex(1046, 894);
-  curveVertex(986, 829);
-  curveVertex(1052, 758);
-  curveVertex(1111, 763);
-  curveVertex(1129, 719);
-  curveVertex(1116, 663);
-  curveVertex(1154, 615);
-  curveVertex(1210, 638);
-  curveVertex(1292, 603);
-  curveVertex(1364, 602);
-  curveVertex(1395, 670);
-  curveVertex(1338, 732);
-  curveVertex(1368, 748);
-  curveVertex(1455, 751);
-  curveVertex(1468, 822);
-  curveVertex(1384, 869);
-  curveVertex(1328, 866);
-  endShape(CLOSE);
-  beginShape();
-  vertex(1140, 600);
-  vertex(1240, 600);
-  vertex(1375, 1000);
-  vertex(1175, 1000);
-  endShape(CLOSE);
-  ellipse(1000, 400, 300, 300);
-  arc(1005, 425, 300, 300, radians(100), radians(175));
-  arc(995, 425, 300, 300, radians(0), radians(75));
-  arc(1000, 425, 300, 300, radians(75), radians(100));
-  
-  stroke((int)(Math.random()*255), 0, (int)(Math.random()*150));
-  while(startY < 350){
-    endY = startY + (int)(Math.random()*9);
-    endX = startX + (int)(Math.random()*9)-9;
-    
-    endX2 = startX2 + (int)(Math.random()*9);
-    endY2 = startY2 + (int)(Math.random()*9)-9;
+  stroke((int)(Math.random()*50), (int)(Math.random()*50), (int)(Math.random()*200)+55);
+
+    endX = startX + (int)(Math.random()*30);
+    endY = startY + (int)(Math.random()*19)-9;
     
     line(startX, startY, endX, endY);
-    line(startX2, startY2, endX2, endY2);
     
     startX = endX;
     startY = endY;
+  
+ 
+    endX2 = startX2 - (int)(Math.random()*30);
+    endY2 = startY2 + (int)(Math.random()*19)-9;
+    
+    line(startX2, startY2, endX2, endY2);
     
     startX2 = endX2;
     startY2 = endY2;
-  }
+  
+  stroke(255);
+  beginShape();
+  vertex(350, 750);
+  vertex(350, 550);
+  vertex(315, 440);
+  vertex(300, 350);
+  vertex(310, 325);
+  vertex(340, 290);
+  vertex(600, 240);
+  vertex(610, 315);
+  vertex(670, 400);
+  vertex(600, 500);
+  vertex(560, 530);
+  vertex(600, 800);
+  endShape();
+  stroke(0);
+  line(370, 390, 560, 370);
+  line(405, 275, 425, 380);
+  line(475, 260, 490, 370);
+  line(545, 250, 560, 370);
+  beginShape();
+  vertex(340, 290);
+  vertex(360, 360);
+  vertex(320, 335);
+  endShape();
+  beginShape();
+  vertex(600, 315);
+  vertex(500, 300);
+  vertex(525, 350);
+  vertex(580, 370);
+  vertex(560, 390);
+  vertex(540, 450);
+  endShape();
 }
 
 void mousePressed(){
-  startX = 175;
-  startY = 175;
-  endX = 350;
+  startX = 500;
+  startY = 350;
+  endX = 0;
   endY = 0;
   
-  startX2 = 175;
-  startY2 = 175;
+  startX2 = 500;
+  startY2 = 350;
   endX2 = 0;
-  endY2 = 350;
-  
-  System.out.println(mouseX);
-  System.out.println(mouseY);
+  endY2 = 0;
 }
